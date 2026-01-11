@@ -130,6 +130,17 @@
     </script>
   </head>
   <body>
+    <script>
+(function(){
+  // Spa Chatbot Widget Loader
+  const spaId = "9";
+  const script = document.createElement('script');
+  script.src = 'https://final-version-chatbot.vercel.app//bot.js?spa=' + spaId;
+  script.async = true;
+  script.setAttribute('data-spa', spaId);
+  document.head.appendChild(script);
+})();
+</script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
